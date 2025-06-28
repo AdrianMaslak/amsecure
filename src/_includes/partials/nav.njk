@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Domov</a></li>
+        <li class="dropdown">
+            <a href="#" {% if page.url.startsWith('/services/') %}class="active"{% endif %}>Služby</a>
+            <ul class="dropdown-content">
+                <li><a href="/services/security/" {% if page.url == '/services/security/' %}class="active"{% endif %}>Zabezpečenie budov</a></li>
+                <li><a href="/services/wifi/" {% if page.url == '/services/wifi/' %}class="active"{% endif %}>Profesionálne WiFi</a></li>
+                <li><a href="/services/iot/" {% if page.url == '/services/iot/' %}class="active"{% endif %}>IoT a Smart Home</a></li>
+                <li><a href="/services/consulting/" {% if page.url == '/services/consulting/' %}class="active"{% endif %}>IT Konzultácie</a></li>
+            </ul>
+        </li>
+        <li><a href="/kontakt/" {% if page.url == '/kontakt/' %}class="active"{% endif %}>Kontakt</a></li>
+    </ul>
+</nav>

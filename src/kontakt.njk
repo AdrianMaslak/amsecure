@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Kontakt
+description: "Kontaktujte AMSECURE. Sme tu pre vás, aby sme odpovedali na vaše otázky a pripravili vám ponuku na mieru. Vyplňte kontaktný formulár."
+permalink: /kontakt/
+---
+
+<h1>Kontaktujte nás</h1>
+<p>Máte záujem o naše služby alebo potrebujete poradiť? Neváhajte nás kontaktovať pomocou formulára nižšie alebo telefonicky.</p>
+
+<form action="https://formspree.io/f/{{ env.FORMSPREE_ID }}" method="POST" class="contact-form">
+    <input type="hidden" name="_next" value="/">
+    <div class="form-group">
+        <label for="name">Vaše meno:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Váš email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Vaša správa:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Odoslať správu</button>
+</form>
+
+<div class="contact-details">
+    <h2>Ďalšie kontaktné údaje</h2>
+    <p><strong>Telefón:</strong> +421 123 456 789</p>
+    <p><strong>Email:</strong> info@amsecure.sk</p>
+    <p><strong>Adresa:</strong> Bezpečná ulica 1, 811 01 Bratislava</p>
+</div>
