@@ -1,3 +1,3 @@
 # AMSECURE - Webová stránka
-
+a
 Toto je repozitár pre webovú stránku bezpečnostnej firmy AMSECURE...
