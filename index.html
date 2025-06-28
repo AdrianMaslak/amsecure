@@ -1,124 +1,245 @@
 <!DOCTYPE html>
-<html lang="sk">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMSECURE – Spoľahlivé technológie pre váš domov a firmu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f7f7f7;
-        }
-
-        header {
-            background: #1e1e1e;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #333;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background: #555;
-        }
-
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            background: #eaeaea;
-        }
-
-        .services,
-        .contact {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .service {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e1e1e;
-            color: white;
-        }
-    </style>
+    <title>AMSecure - Professional Security Services</title>
+    <meta name="description" content="Professional security services to protect your business and assets">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <h1>AMSECURE</h1>
-        <p>Spoľahlivé WiFi, kamery, smart domy a bezpečnostné riešenia</p>
-    </header>
-
-    <nav>
-        <a href="#services">Služby</a>
-        <a href="#contact">Kontakt</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AMSecure</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services/cyber-security.html">Cyber Security</a></li>
+                <li><a href="services/physical-security.html">Physical Security</a></li>
+                <li><a href="services/consulting.html">Consulting</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="hero">
-        <h2>Technológie, ktorým môžete veriť</h2>
-        <p>Komplexné riešenia pre domácnosti a firmy v oblasti WiFi, kamerových systémov, smart domácností a IT
-            bezpečnosti.</p>
-    </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="fade-in">Your Trusted Security Partner</h1>
+            <p class="fade-in">Comprehensive security solutions tailored to protect your business in an increasingly complex world.</p>
+            <a href="#services" class="btn fade-in">Our Services</a>
+        </div>
+    </header>
 
-    <section class="services" id="services">
-        <h2>Naše služby</h2>
-        <div class="service">
-            <h3>WiFi & Sieťové riešenia</h3>
-            <p>Profesionálna inštalácia a optimalizácia domácej alebo firemnej siete, firewall, VLAN, bezpečnosť.</p>
-        </div>
-        <div class="service">
-            <h3>Kamerové systémy</h3>
-            <p>IP kamery, NVR, mobilný prístup, nahrávanie – návrh, montáž a zaškolenie.</p>
-        </div>
-        <div class="service">
-            <h3>Smart domácnosti</h3>
-            <p>Ovládanie osvetlenia, zásuviek, zámkov a brán cez mobil. Integrácia smart riešení do bežného života.</p>
-        </div>
-        <div class="service">
-            <h3>NAS & Zálohovanie</h3>
-            <p>Bezpečné domáce alebo firemné úložisko dát, vzdialený prístup a automatické zálohovanie.</p>
-        </div>
-        <div class="service">
-            <h3>IT konzultácie</h3>
-            <p>Pomoc s návrhom riešenia, poradenstvo, technická podpora a školenie klientov.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Expert security solutions for your business needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cyber Security</h3>
+                        <p>Protect your digital assets with our comprehensive cyber security solutions, including threat detection and prevention.</p>
+                        <a href="services/cyber-security.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Physical Security</h3>
+                        <p>Ensure the safety of your premises and personnel with our advanced physical security solutions.</p>
+                        <a href="services/physical-security.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Security Consulting</h3>
+                        <p>Get expert advice and strategic planning to enhance your overall security posture.</p>
+                        <a href="services/consulting.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Kontakt</h2>
-        <p>Máte záujem o službu alebo potrebujete poradiť? Ozvite sa mi:</p>
-        <ul>
-            <li><strong>Meno:</strong> xxx</li>
-            <li><strong>Tel:</strong> xxx</li>
-            <li><strong>Email:</strong> info@amsecure.sk</li>
-            <li><strong>Pôsobenie:</strong> xxx</li>
-        </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Contact us for a free consultation</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service of Interest</label>
+                    <select id="service" name="service" class="form-control" required>
+                        <option value="">Select a service</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="physical-security">Physical Security</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 AMSECURE – Všetky práva vyhradené.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AMSecure. All rights reserved.</p>
+        </div>
     </footer>
-</body>
 
+    <script src="js/main.js"></script>
+</body>
+</html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMSECURE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .service-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .service-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AMSECURE</h1>
+    <p>Profesionálne siete, kamery, smart riešenia a IoT</p>
+  </header>
+
+  <section class="section">
+    <h2>Služby</h2>
+    <ul class="service-list">
+      <li>WiFi & siete – návrh, inštalácia, firewall</li>
+      <li>Kamery a dohľadové systémy</li>
+      <li>Smart domácnosti (Tuya, Shelly...)</li>
+      <li>IT infraštruktúra pre firmy</li>
+      <li>IoT riešenia a monitoring</li>
+      <li>Konzultácie a poradenstvo</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Kontaktujte nás</h2>
+    <form action="https://formspree.io/f/mjkrpagb" method="POST">
+      <label for="name">Meno</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Typ služby</label>
+      <select id="service" name="service">
+        <option value="wifi">WiFi & siete</option>
+        <option value="cam">Kamery</option>
+        <option value="smart">Smart domácnosť</option>
+        <option value="iot">IoT / IT infra</option>
+        <option value="other">Iné / Neviem</option>
+      </select>
+
+      <label for="message">Správa</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Odoslať</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 AMSECURE | www.amsecure.sk | info@amsecure.sk
+  </footer>
+</body>
 </html>
