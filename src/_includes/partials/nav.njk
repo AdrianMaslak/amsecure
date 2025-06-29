@@ -1,15 +1,20 @@
-<nav>
-    <ul>
-        <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Domov</a></li>
-        <li class="dropdown">
-            <a href="#" {% if page.url.startsWith('/services/') %}class="active"{% endif %}>Služby</a>
+<nav class="main-nav">
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="nav-list" id="nav-list">
+        <li class="nav-item"><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Domov</a></li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle {% if page.url.startsWith('/services/') %}active{% endif %}">Služby</a>
             <ul class="dropdown-content">
-                <li><a href="/services/security/" {% if page.url == '/services/security/' %}class="active"{% endif %}>Zabezpečenie budov</a></li>
-                <li><a href="/services/wifi/" {% if page.url == '/services/wifi/' %}class="active"{% endif %}>Profesionálne WiFi</a></li>
-                <li><a href="/services/iot/" {% if page.url == '/services/iot/' %}class="active"{% endif %}>IoT a Smart Home</a></li>
-                <li><a href="/services/consulting/" {% if page.url == '/services/consulting/' %}class="active"{% endif %}>IT Konzultácie</a></li>
+                <li class="dropdown-item"><a href="/services/security/" class="dropdown-link {% if page.url == '/services/security/' %}active{% endif %}">Zabezpečenie budov</a></li>
+                <li class="dropdown-item"><a href="/services/wifi/" class="dropdown-link {% if page.url == '/services/wifi/' %}active{% endif %}">Profesionálne WiFi</a></li>
+                <li class="dropdown-item"><a href="/services/iot/" class="dropdown-link {% if page.url == '/services/iot/' %}active{% endif %}">IoT a Smart Home</a></li>
+                <li class="dropdown-item"><a href="/services/consulting/" class="dropdown-link {% if page.url == '/services/consulting/' %}active{% endif %}">IT Konzultácie</a></li>
             </ul>
         </li>
-        <li><a href="/kontakt/" {% if page.url == '/kontakt/' %}class="active"{% endif %}>Kontakt</a></li>
+        <li class="nav-item"><a href="/kontakt/" class="nav-link {% if page.url == '/kontakt/' %}active{% endif %}">Kontakt</a></li>
     </ul>
 </nav>
