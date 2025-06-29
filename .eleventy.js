@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = function(eleventyConfig) {
   // Passthrough copy for the css directory
   eleventyConfig.addPassthroughCopy("src/css");
@@ -11,6 +13,7 @@ module.exports = function(eleventyConfig) {
 
   // Set custom directories for input, output, includes, and data
   return {
+    pathPrefix: isProduction ? "/amsecure/" : "/",
     dir: {
       input: "src",
       includes: "_includes",

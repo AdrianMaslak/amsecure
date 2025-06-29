@@ -26,6 +26,7 @@ jobs:
       - name: Build website 🏗️
         run: npm run build
         env:
+          NODE_ENV: production
           FORMSPREE_ID: ${{ secrets.FORMSPREE_ID }}
 
       - name: Deploy 🚀
