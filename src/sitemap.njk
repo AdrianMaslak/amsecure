@@ -4,11 +4,11 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for page in collections.all | filterPostList -%}
-    {%- if page.url and page.url != '/sitemap.xml' -%}
+  {%- for page in collections.all %}
+    {%- if page.url and page.url != '/sitemap.xml' and not page.data.draft %}
       <url>
         <loc>https://amsecure.sk{{ page.url | url }}</loc>
-        <lastmod>{{ page.date | w3DateFilter }}</lastmod>
+        <lastmod>{% if page.date %}{{ page.date | w3DateFilter }}{% else %}{{ 'now' | w3DateFilter }}{% endif %}</lastmod>
         <changefreq>{% if page.url == '/' %}weekly{% else %}monthly{% endif %}</changefreq>
         <priority>{% if page.url == '/' %}1.0{% else %}0.8{% endif %}</priority>
       </url>

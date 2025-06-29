@@ -1,5 +1,5 @@
 ---
-layout: location-service.njk
+layout: layouts/location-service.njk
 title: WiFi siete a pripojenie Bratislava
 description: Profesionálna inštalácia a optimalizácia WiFi sietí v Bratislave. Rýchle a stabilné pripojenie pre domácnosti a firmy.
 location: Bratislava

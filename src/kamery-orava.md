@@ -1,5 +1,5 @@
 ---
-layout: location-service.njk
+layout: layouts/location-service.njk
 title: Kamery a kamerové systémy Orava
 description: Profesionálna inštalácia kamerových systémov v regióne Orava. Bezpečnostné kamery s vysokým rozlíšením pre domácnosti a firmy.
 location: Orava
