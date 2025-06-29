@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close menu when clicking on a nav link
-    const navLinks = document.querySelectorAll('.nav-link, .dropdown-link');
+    // Close menu when clicking on a nav link (but not on dropdown toggles)
+    const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 992) {
