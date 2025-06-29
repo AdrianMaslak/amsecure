@@ -1,0 +1,81 @@
+{% set siteUrl = 'https://amsecure.sk' %}
+{% set logoUrl = siteUrl + '/img/logo.png' %}
+{% set currentDate = now | w3DateFilter %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ siteUrl }}#organization",
+  "name": "AMSECURE",
+  "url": "{{ siteUrl }}",
+  "logo": "{{ logoUrl }}",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61577845768040",
+    "https://www.linkedin.com/company/amsecuresk/"
+  ],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+421 905 123 456",
+    "contactType": "customer service",
+    "availableLanguage": ["Slovak"]
+  }],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bratislava",
+    "postalCode": "851 01",
+    "streetAddress": "Hlavná 1"
+  }
+}
+</script>
+
+{% if page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ siteUrl }}#website",
+  "url": "{{ siteUrl }}",
+  "name": "AMSECURE",
+  "description": "Profesionálne bezpečnostné riešenia, WiFi siete a smart domácnosti",
+  "publisher": {
+    "@id": "{{ siteUrl }}#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ siteUrl }}/vyhladat?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == '/kontakt/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "{{ siteUrl }}/kontakt/#webpage",
+  "url": "{{ siteUrl }}/kontakt/",
+  "name": "Kontakt | AMSECURE",
+  "description": "Kontaktujte nás pre bezplatnú konzultáciu ohľadne zabezpečenia vášho domova alebo firmy.",
+  "publisher": {
+    "@id": "{{ siteUrl }}#organization"
+  },
+  "breadcrumb": {
+    "@id": "{{ siteUrl }}/kontakt/#breadcrumb"
+  },
+  "inLanguage": "sk-SK",
+  "datePublished": "2023-01-01T00:00:00+01:00",
+  "dateModified": "{{ currentDate }}",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Ako vás môžeme kontaktovať?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Môžete nás kontaktovať telefonicky na čísle +421 905 123 456, emailom na info@amsecure.sk alebo vyplnením kontaktného formulára na našej stránke."
+    }
+  }]
+}
+</script>
+{% endif %}

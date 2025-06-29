@@ -1,0 +1,73 @@
+---
+layout: base.njk
+---
+
+<article class="service-location">
+    <h1>{{ title }}</h1>
+    
+    <div class="service-content">
+        <div class="service-description">
+            {{ content | safe }}
+        </div>
+        
+        {% if service == 'kamery' %}
+        <div class="service-features">
+            <h2>Naše služby v oblasti {{ location }}:</h2>
+            <ul>
+                <li>Inštalácia kamerových systémov</li>
+                <li>Bezpečnostné kamery s vysokým rozlíšením</li>
+                <li>Dohľadové systémy pre domácnosti a firmy</li>
+                <li>Nočné videnie a detekcia pohybu</li>
+                <li>Vzdialený prístup cez mobil alebo počítač</li>
+            </ul>
+        </div>
+        {% endif %}
+        
+        {% if service == 'wifi' %}
+        <div class="service-features">
+            <h2>WiFi riešenia pre {{ location }}:</h2>
+            <ul>
+                <li>Návrh a inštalácia WiFi sietí</li>
+                <li>Riešenie pre domácnosti a firmy</li>
+                <li>Rozšírenie pokrytia WiFi signálu</li>
+                <li>Bezpečnostné riešenia pre WiFi siete</li>
+                <li>Optimalizácia rýchlosti a stabilita pripojenia</li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="location-cta">
+        <h2>Potrebujete profesionálne riešenie v {{ location }}?</h2>
+        <p>Kontaktujte nás ešte dnes a získajte bezplatnú konzultáciu.</p>
+        <a href="/kontakt/" class="button">Kontaktovať teraz</a>
+    </div>
+    
+    {% if service == 'kamery' %}
+    <div class="location-faq">
+        <h2>Často kladené otázky o kamerových systémoch v {{ location }}:</h2>
+        <div class="faq-item">
+            <h3>Aký typ kamery je pre mňa vhodný?</h3>
+            <p>Ponúkame široký výber kamerových systémov podľa vašich potrieb. Po bezplatnej konzultácii vám odporučíme optimálne riešenie.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Ako dlho trvá inštalácia?</h3>
+            <p>Štandardná inštalácia pre rodinný dom trvá 4-6 hodín, v závislosti od rozsahu a náročnosti.</p>
+        </div>
+    </div>
+    {% endif %}
+    
+    {% if service == 'wifi' %}
+    <div class="location-faq">
+        <h2>Často kladené otázky o WiFi sieťach v {{ location }}:</h2>
+        <div class="faq-item">
+            <h3>Ako zistím, aké pokrytie potrebujem?</h3>
+            <p>Naši odborníci vykonajú bezplatnú analýzu vášho priestoru a navrhnú optimálne riešenie.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Môžem si WiFi sieť rozšíriť aj neskôr?</h3>
+            <p>Áno, naše riešenia sú modulárne a daj sa jednoducho rozširovať podľa vašich potrieb.</p>
+        </div>
+    </div>
+    {% endif %}
+</article>
